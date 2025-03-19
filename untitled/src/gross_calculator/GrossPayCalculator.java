@@ -1,4 +1,7 @@
 package gross_calculator;
+
+import java.util.Scanner;
+
 // Reserved Words (package, public class etc)
 // packages (convension lower case) act as folders of grouped code
 public class GrossPayCalculator {
@@ -15,7 +18,10 @@ public class GrossPayCalculator {
         // Line 10 will now be commented out to continue the course
 
         //1. Get the number of hours worked
-        int hours = 40;
+        int hours = 0;
+        System.out.println("How many hours did you work?");
+        Scanner scanner = new Scanner(System.in);
+        hours = scanner.nextInt();
         // variable names are just given
         // errored code is given in red
         // Variables must be declared in JAVA (Statically typed)
@@ -23,7 +29,9 @@ public class GrossPayCalculator {
 
         //2. Get the hourly pay rate
         // will want a decimal, we will use double
-        double payRate = 25.50;
+        double payRate = 0;
+        System.out.println("What is your pay rate?");
+        payRate=scanner.nextDouble();
 
         //3. Multiply hours and pay rate
         double grossPay = hours * payRate;
@@ -50,5 +58,25 @@ public class GrossPayCalculator {
         // reserved words can't be used
 
         //ENDING SESSION 1 HERE
+
+        //STARTING SESSION 2 HERE
+        // Want to change hardcoded variables to input variable
+        //changing hours = 0 and then request an input
+        // The scanner class is not currently included so it needs to be imported.
+        // This is revealed by the colour over the words.
+        //This has been put at the top.
+        // Typing scanner. reveals options, pick correct data types.
+        //scanner can be closed too to save computational.
+        scanner.close();
     }
+
+    // Arithmatic operators are fixed usage, only + can be used on characters and strings
+    // + adds
+    // - subtracts
+    // * multiplies
+    // / divides
+    // % is the modulo, a%b returns mod_b(a) remainder(a/b)
+
+    // if statements are decision trees
+    // move to Salary Calculator
 }

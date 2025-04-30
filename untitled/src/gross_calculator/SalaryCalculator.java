@@ -121,7 +121,21 @@ public class SalaryCalculator {
         // the others need A && B, or A || B where A and B are bools
 
         // END OF SESSION 2.
-        
+        // SESSION 3 START.
+
+        // The AND and OR ops use short circuiting, I.E. they only look
+        // the minimum number of conditions to come up with a decision.
+        // A && B if A is false, it does not evaluate B
+        // A || B if A is true, if does not evaluate B
+        // This increases efficintcy.
+
+        // REMEMBER,
+        // Variables need a type to be given,
+        // if( QUESTION ){
+        //      STUFF
+        // }
+
+
     }
 }
 

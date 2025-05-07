@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 
 public class FunctionalProgrammingTutorial {
@@ -67,6 +68,45 @@ public class FunctionalProgrammingTutorial {
         int[] numbers = {0,2,4,6,8,10,12};
         Arrays.stream(numbers).forEach(n-> System.out.print(n + 1 + ""));
         Arrays.stream(numbers).parallel().forEach(n-> System.out.print(n + 1 + ""));
+
+        /*
+        Stream operations can be intermediate or terminal.
+        intermediate return the stream so more can be enacted
+        terminal close the stream and return the result, can be void or a value.
+        some stream operations allow data manipulation
+         */
+
+        List<String> veggies =  List.of("Spinach","Cabbage","Peas","Green beans","Sprouts","Carrots");
+        veggies.stream().anyMatch(v->v.contains(" "));
+        // any match is terminal (it returns true) not a stream
+        veggies.stream().allMatch(v->v.contains("s"));
+        veggies.stream().filter(v->v.startsWith("C")).forEach(System.out::println);
+        // Filter is intermediate, forEach is terminal
+        veggies.stream().map(String::toUpperCase).forEach(System.out::println);
+        // does not change the original list
+
+        /*
+        .stream().reduce() reduces the Object to single value
+        reduce optionally gives an identity, or start point
+        and a binary operator.
+
+        collect takes a stream and returns a data structure of your choice,
+        collect takes a collector
+
+        all the intermediate operations are performed in a single pass, this is really useful for large data collections
+        and highlights the strength of the streams
+         */
+
+        List<Integer> numbers2 = List.of(0,2,4,6,8,10,12);
+
+        numbers2.stream().reduce(0,(a,b)->a+b);
+
+        veggies.stream().sorted().reduce("",(a,b) -> a + " | " + b);
+
+        List veggiesThatEndInS = veggies.stream().filter(v -> v.endsWith("s")).collect(Collectors.toList());
+
+        veggiesThatEndInS.forEach(System.out::println);
+
 
 
     }

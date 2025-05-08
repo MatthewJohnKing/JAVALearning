@@ -93,12 +93,33 @@ public class Workout {
         else if(number==0){
             System.out.println("    Wow! exactly average! Push yourself harder next time!");
         }
-        else if(number>2){
-            System.out.println("    You smashed the averages. Like by double! Consider resetting them higher.");
+        else if(number>1){
+            System.out.println("    You smashed the averages. Like by a lot! Consider resetting them higher.");
         }
         else {
             System.out.println("    Great job today, you beat the averages. Lets keep this up tomorrow!");
         }
+    }
+
+    public void printAllExercises(){
+        System.out.println("AssChinDip = Assisted Chin Dips");
+        System.out.println("AssPullUp = Assisted Pull ups");
+        System.out.println("CrookedBarCurls = Crooked Bar Curls over Bench");
+        System.out.println("DBChestPress = DumbbellChestPress");
+        System.out.println("DBCurls = Dumbbell curls");
+        System.out.println("DBLatRaise = Dumbbell Lateral Raises");
+        System.out.println("DBShoulderPress = Seated Dumbbell shoulder Press");
+        System.out.println("DBShoulderShrugs = Dumbbell Shoulder Shrugs");
+        System.out.println("FWRow= Free weight Row");
+        System.out.println("HalfDBCurls = Half range dumbbell curls");
+        System.out.println("LatPullDownOut = Lateral Pulldown bar outer grip");
+        System.out.println("OvrHeadTricDB = Over Head Tricep extension with DB");
+        System.out.println("RearDelt = Rear Delt Machine");
+        System.out.println("RotatorCuffDB = Rotator Cuff DB Curls");
+        System.out.println("SglArmBentRow = Sgl arm bent over Row");
+        System.out.println("SglArmCabRaise = Single Arm cable raises");
+        System.out.println("WristCurls = Weighted Wrist Curls");
+        System.out.println("XBodyDBCurls = Cross Body Dumbbell Curls");
     }
 
 }

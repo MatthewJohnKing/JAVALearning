@@ -10,9 +10,15 @@ public class DBCurls extends Exercise{
     }
 
     @Override
-    int exerciseScore(){
-        final int[] score = {0};
+    public double exerciseScore(){
+        final Double[] score = {0.0};
         super.getExerciseSets().forEach( dat ->  { score[0] += dat[0]*dat[1]*2;});
         return score[0];
     }
+
+    @Override
+    public double exerciseReferenceScore() {
+        return 2*5*10*10;
+    }
 }
+

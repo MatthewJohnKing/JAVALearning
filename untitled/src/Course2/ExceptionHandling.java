@@ -31,7 +31,7 @@ public class ExceptionHandling {
         File outputFile = new File("output.txt");
 
         try(
-                outputFile.createNewFile();
+                //outputFile.createNewFile();
                 Scanner fileReader = new Scanner(inputFile);
                 PrintWriter fileWriter = new PrintWriter(outputFile);
         ){

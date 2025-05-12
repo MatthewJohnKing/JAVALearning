@@ -1,8 +1,13 @@
 package WorkoutLog;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Workout {
     /*
@@ -28,7 +33,44 @@ public class Workout {
         this.date = date;
     }
     public Workout() {
+    }
+    public Workout(File inputFile){
+        Scanner fileReader = null;
+        Exercise exercise= new Exercise();
+        try {
+            fileReader = new Scanner(inputFile);
+            if (fileReader.nextLine().equals("ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!")) {
+                this.date=fileReader.nextLine();
+                while (fileReader.hasNext()) {
+                    String Line = fileReader.nextLine();
+                    if (Line.equals("Next Exercise")) {
+                        this.exercises.add(exercise);
+                        exercise = new Exercise();
+                        exercise.setName(fileReader.nextLine());
+                    } else if (Line.equals("Finished")) {
+                        this.exercises.add(exercise);
+                        break;
+                    } else if (!Line.equals("Started")) {
+                        String[] splitLine = Line.split(" ");
+                        int rep = Integer.parseInt(splitLine[0]);
+                        int weight = Integer.parseInt(splitLine[1]);
+                        exercise.addSet(weight, rep);
+                    }
+                }
+            }else {
+                System.out.println("BAD FILE WRITE");
+                new Workout();
+            }
+        } catch (FileNotFoundException e) {
+            new Workout();
+            throw new RuntimeException(e);
+        } finally{
 
+        }
+
+
+        // Needs to check if the first line is correct, needs to read each of the lines and then within a series of
+        // if else statements write each of the exercises line by line to build the original workout again.
     }
 
     public String getDate() {
@@ -120,6 +162,31 @@ public class Workout {
         System.out.println("SglArmCabRaise = Single Arm cable raises");
         System.out.println("WristCurls = Weighted Wrist Curls");
         System.out.println("XBodyDBCurls = Cross Body Dumbbell Curls");
+    }
+
+    public void writeWorkoutFile(){
+        String fileName= "src/WorkoutLog/WorkoutLogFiles/workout" + this.date +".txt";
+        File outputFile = new File(fileName);
+        try {
+            outputFile.createNewFile();
+            PrintWriter fileWriter = new PrintWriter(fileName);
+            fileWriter.println( "ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!" );
+            fileWriter.println( this.date );
+            fileWriter.println( "Started" );
+
+            this.exercises.forEach( v -> {
+                fileWriter.println( "Next Exercise" );
+                fileWriter.println( v.name );
+                v.exerciseSets.forEach( w -> {
+                    fileWriter.println(w[0] + " " + w[1]);
+                    });
+                });
+            fileWriter.println( "Finished" );
+            fileWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }

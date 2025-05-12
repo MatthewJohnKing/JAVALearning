@@ -1,6 +1,11 @@
 package WorkoutLog;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+
 public class GenerateWorkout {
 
     public static void main(String[] args) {
@@ -72,6 +77,11 @@ public class GenerateWorkout {
 
         workout1.printScore();
 
+        workout1.writeWorkoutFile();
+        File inputFile = new File("src/WorkoutLog/WorkoutLogFiles/workout06-05-2025.txt");
+        Workout workout3 = new Workout(inputFile);
+
+        workout3.printExercises();
     }
 
     public static int lbsToKg(int lbs){

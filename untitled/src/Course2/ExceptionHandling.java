@@ -27,26 +27,28 @@ public class ExceptionHandling {
 
     public static void main(String[] args){
 
-        File inputFile = new File("numbers.txt");
-        File outputFile = new File("output.txt");
+        // File inputFile = new File("numbers.txt");
+        // File outputFile = new File("output.txt");
 
-        try(
+      //  try(
                 //outputFile.createNewFile();
-                Scanner fileReader = new Scanner(inputFile);
-                PrintWriter fileWriter = new PrintWriter(outputFile);
-        ){
+          //      Scanner fileReader = new Scanner(inputFile);
+          //      PrintWriter fileWriter = new PrintWriter(outputFile);
+      //  ){
             // file.createNewFile();
             //fileReader = new Scanner(file); not needed due to try declaratiom
-            while(fileReader.hasNext()){
-                fileWriter.println(fileReader.nextDouble());
+         //   while(fileReader.hasNext()){
+         //       fileWriter.println(fileReader.nextDouble());
                 // the next double method throws an unchecked exception
-            }
+     //       }
 
-        }catch(FileNotFoundException | InputMismatchException e) { //multicatch
+    /*    }catch(FileNotFoundException | InputMismatchException e) { //multicatch
             e.printStackTrace();
         } finally{
            // fileReader.close();// not needed due to try declaration
         }
+
+     */
 
 
         //You could even create the needed directory

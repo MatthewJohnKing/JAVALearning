@@ -1,0 +1,50 @@
+ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!
+06-05-2025
+Started
+Next Exercise
+Dumbbell Curls
+8 15
+10 10
+12 5
+12 6
+12 6
+Next Exercise
+Half Dumbbell Curls
+10 13
+12 10
+14 7
+16 5
+14 5
+14 6
+Next Exercise
+Assisted Chin Dip
+32 20
+27 16
+23 12
+18 11
+14 7
+14 7
+Next Exercise
+Cross Body dumbbell curls
+6 15
+8 14
+10 9
+12 7
+12 5
+12 5
+Next Exercise
+Weighted Wrist Curls
+4 20
+6 20
+8 19
+10 13
+10 11
+12 8
+Next Exercise
+Crooked Bar Over Bench Curls
+10 15
+15 9
+15 8
+20 3
+15 7
+Finished

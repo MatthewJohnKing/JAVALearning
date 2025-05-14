@@ -28,6 +28,7 @@ public class Workout {
      */
     protected String date;
     protected List<Exercise> exercises = new ArrayList<>();
+    protected double score=0;
 
     public Workout(String date) {
         this.date = date;
@@ -37,16 +38,28 @@ public class Workout {
     public Workout(File inputFile){
         Scanner fileReader = null;
         Exercise exercise= new Exercise();
+        int onePass =0;
         try {
             fileReader = new Scanner(inputFile);
             if (fileReader.nextLine().equals("ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!")) {
-                this.date=fileReader.nextLine();
+                this.setDate(fileReader.nextLine());
+                this.setScore(Double.parseDouble(fileReader.nextLine()));
                 while (fileReader.hasNext()) {
                     String Line = fileReader.nextLine();
                     if (Line.equals("Next Exercise")) {
-                        this.exercises.add(exercise);
+                        switch (onePass){
+                            case 1:
+                                this.exercises.add(exercise);
+                                break;
+                            case 0:
+                                onePass=1;
+                                break;
+
+                        }
                         exercise = new Exercise();
                         exercise.setName(fileReader.nextLine());
+                        exercise.setScore(Double.parseDouble(fileReader.nextLine()));
+                        exercise.setReferenceScore(Double.parseDouble(fileReader.nextLine()));
                     } else if (Line.equals("Finished")) {
                         this.exercises.add(exercise);
                         break;
@@ -89,15 +102,30 @@ public class Workout {
         this.exercises = exercises;
     }
 
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
     public void addExercise(Exercise input1){
         this.exercises.add(input1);
     }
 
     public double totalScore(){
+        return totalScore(false);
+    }
+
+    public double totalScore(Boolean store){
         Double[] number= {0.0};
         this.exercises.forEach( v ->{
-            double w = v.exerciseScore();
-            number[0] += w/v.exerciseReferenceScore();});
+            double w = v.getScore();
+            number[0] += w/v.getReferenceScore();});
+        if(store){
+            this.setScore(number[0]/this.exercises.size()-1);
+        }
         return number[0]/this.exercises.size()-1;
     }
 
@@ -171,12 +199,15 @@ public class Workout {
             outputFile.createNewFile();
             PrintWriter fileWriter = new PrintWriter(fileName);
             fileWriter.println( "ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!" );
-            fileWriter.println( this.date );
+            fileWriter.println( this.getDate() );
+            fileWriter.println(this.getScore());
             fileWriter.println( "Started" );
 
             this.exercises.forEach( v -> {
                 fileWriter.println( "Next Exercise" );
-                fileWriter.println( v.name );
+                fileWriter.println( v.getName() );
+                fileWriter.println( v.getScore());
+                fileWriter.println( v.getReferenceScore());
                 v.exerciseSets.forEach( w -> {
                     fileWriter.println(w[0] + " " + w[1]);
                     });

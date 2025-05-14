@@ -21,6 +21,7 @@ public class GenerateWorkout {
         exercise1.addSet( 12 , 5 );
         exercise1.addSet( 12 , 6 );
         exercise1.addSet( 12 , 6 );
+        exercise1.exerciseScore(true);
 
         Exercise exercise2 = new HalfDBCurls("This is a real exercise record");
         exercise2.addSet( 10 , 13 );
@@ -29,7 +30,7 @@ public class GenerateWorkout {
         exercise2.setSet( 3,14 , 7 );
         exercise2.setSet( 4,16 , 5 );
         exercise2.setSet( 5,14 , 5 );
-
+        exercise2.exerciseScore(true);
 
         Exercise exercise3 = new AssChinDip();
         exercise3.addSet( lbsToKg(70) , 20 );
@@ -38,6 +39,7 @@ public class GenerateWorkout {
         exercise3.addSet( lbsToKg(40) , 11 );
         exercise3.addSet( lbsToKg(30) , 7 );
         exercise3.addSet( lbsToKg(30) , 7 );
+        exercise3.exerciseScore(true);
 
         Exercise exercise4 = new XBodyDBCurls();
         exercise4.addSet( 6 , 15 );
@@ -46,6 +48,7 @@ public class GenerateWorkout {
         exercise4.addSet( 12 , 7 );
         exercise4.addSet( 12 , 5 );
         exercise4.addSet( 12 , 5 );
+        exercise4.exerciseScore(true);
 
         Exercise exercise5 = new WristCurls();
         exercise5.addSet( 4 , 20 );
@@ -54,6 +57,7 @@ public class GenerateWorkout {
         exercise5.addSet( 10 , 13 );
         exercise5.addSet( 10 , 11 );
         exercise5.addSet( 12 , 8 );
+        exercise5.exerciseScore(true);
 
         Exercise exercise6 = new CrookedBarCurls();
         exercise6.addSet( 10 , 15 );
@@ -61,6 +65,7 @@ public class GenerateWorkout {
         exercise6.addSet( 15 ,8 );
         exercise6.addSet( 20 , 3 );
         exercise6.addSet( 15 , 7 );
+        exercise6.exerciseScore(true);
 
         //exercise1.removeSet(3); //Need to Implement
         //exercise1.printSets();
@@ -72,6 +77,7 @@ public class GenerateWorkout {
         workout1.addExercise(exercise5);
         workout1.addExercise(exercise6);
         workout1.printExercises();
+        workout1.totalScore(true);
 
         // workout1.remove(exercise2); //Need to Implement
 

@@ -6,21 +6,25 @@ public class AssChinDip extends Exercise{
     public AssChinDip() {
         super();
         super.name="Assisted Chin Dip";
+        super.setReferenceScore(5*(80-27)*12);
     }
     public AssChinDip(String comment) {
         super("Assisted Chin Dip",comment);
+        super.setReferenceScore(5*(80-27)*12);
     }
 
     @Override
     public double exerciseScore(){
-        final Double[] score = {0.0};
-        super.getExerciseSets().forEach( dat ->  { score[0] += (80-dat[0])*dat[1];});
-        return score[0];
+        return this.exerciseScore(false);
     }
 
-    @Override
-    public double exerciseReferenceScore() {
-        return 5*(80-27)*12;
+    public double exerciseScore(Boolean setScore){
+        final Double[] score = {0.0};
+        super.getExerciseSets().forEach( dat ->  { score[0] += (80-dat[0])*dat[1];});
+        if(setScore) {
+            super.setScore(score[0]);
+        }
+        return score[0];
     }
 
     @Override

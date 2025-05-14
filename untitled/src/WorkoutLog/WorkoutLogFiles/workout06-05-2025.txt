@@ -1,8 +1,11 @@
 ThisIsAUniqueIDToCheckIfItIsACorrecttxtFile!
 06-05-2025
+0.7906830081169705
 Started
 Next Exercise
 Dumbbell Curls
+848.0
+1000.0
 8 15
 10 10
 12 5
@@ -10,6 +13,8 @@ Dumbbell Curls
 12 6
 Next Exercise
 Half Dumbbell Curls
+1646.1445866022827
+1414.213562373095
 10 13
 12 10
 14 7
@@ -18,6 +23,8 @@ Half Dumbbell Curls
 14 6
 Next Exercise
 Assisted Chin Dip
+4098.0
+3180.0
 32 20
 27 16
 23 12
@@ -26,6 +33,8 @@ Assisted Chin Dip
 14 7
 Next Exercise
 Cross Body dumbbell curls
+1402.8998538741105
+1131.370849898476
 6 15
 8 14
 10 9
@@ -34,6 +43,8 @@ Cross Body dumbbell curls
 12 5
 Next Exercise
 Weighted Wrist Curls
+1945.957861825379
+1018.2337649086285
 4 20
 6 20
 8 19
@@ -42,6 +53,8 @@ Weighted Wrist Curls
 12 8
 Next Exercise
 Crooked Bar Over Bench Curls
+2790.0
+650.0
 10 15
 15 9
 15 8

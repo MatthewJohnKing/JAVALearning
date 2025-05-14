@@ -4,37 +4,28 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Workout {
-    /*
-    The workout class will contain;
-    Date of workout
-    Exercises performed
 
-    And methods to retrieve
-    A score for the workout
-
-    Exercise will be a disjoint Class
-    Exercises will be a list of the Exercise Class
-
-    The Exercise Class will have subclasses for each exercise which produces
-        a score for the specific exercise. Stored will be;
-         the set number, the reps and the weights. There will also be
-         an optional comment section.
-     */
     protected String date;
+    // date can just be any identifying string for the workout
     protected List<Exercise> exercises = new ArrayList<>();
+    // List of exercise objects; containing sets for the exercise and scores.
     protected double score=0;
+    // A score for the workout for tracking progress. Could be adjusted for comparisons of workouts.
 
+    // Constructor with workout identifier
     public Workout(String date) {
         this.date = date;
     }
+    // default constructor
     public Workout() {
     }
+
+    // Constructor from previous workout file
     public Workout(File inputFile){
         Scanner fileReader = null;
         Exercise exercise= new Exercise();
@@ -77,47 +68,36 @@ public class Workout {
         } catch (FileNotFoundException e) {
             new Workout();
             throw new RuntimeException(e);
-        } finally{
-
         }
-
-
-        // Needs to check if the first line is correct, needs to read each of the lines and then within a series of
-        // if else statements write each of the exercises line by line to build the original workout again.
     }
 
+    //Getter and Setter Methods for each Field
     public String getDate() {
         return date;
     }
-
     public void setDate(String date) {
         this.date = date;
     }
-
     public List<Exercise> getExercises() {
         return exercises;
     }
-
     public void setExercises(List<Exercise> exercises) {
         this.exercises = exercises;
     }
-
     public double getScore() {
         return score;
     }
-
     public void setScore(double score) {
         this.score = score;
     }
 
+    // Adds an exercise object to the exercise list
     public void addExercise(Exercise input1){
         this.exercises.add(input1);
     }
 
-    public double totalScore(){
-        return totalScore(false);
-    }
-
+    // Computes the workout score based on the exercises.
+    // If true argument is passed it will set the Score.
     public double totalScore(Boolean store){
         Double[] number= {0.0};
         this.exercises.forEach( v ->{
@@ -129,29 +109,22 @@ public class Workout {
         return number[0]/this.exercises.size()-1;
     }
 
+    // As previous but if not boolean it assumes false.
+    public double totalScore(){
+        return totalScore(false);
+    }
+
+    // Method to print each of the exercises, their sets and the scores, includes a comment on the final score.
     public void printExercises(){
         final int[] number = {0};
         this.exercises.forEach( v -> {
             number[0] +=1;
             System.out.println("Exercise " + number[0] + ": ");
             v.printSets(); });
-        System.out.println("Total Workout Score : " + this.totalScore());
-        if(this.totalScore()<0) {
-            System.out.println("A negative score just means you didn't reach the averages for the workout you did.");
-            System.out.println("Some days you are just weaker than others. Don't worry.");
-            System.out.println("Go get some food, a good sleep and maybe take a rest day.");
-        }
-        else if(this.totalScore()==0){
-            System.out.println("Wow! exactly average! Push yourself harder next time!");
-        }
-        else if(this.totalScore()>2){
-            System.out.println("You smashed the averages. Like by double! Consider resetting them higher.");
-        }
-        else {
-            System.out.println("Great job today, you beat the averages. Lets keep this up tomorrow!");
-        }
+        printScore();
     }
 
+    // Just comments on the final score, exactly as above.
     public void printScore(){
         double number = this.totalScore();
         System.out.println("Total Workout Score : " + number);
@@ -171,6 +144,7 @@ public class Workout {
         }
     }
 
+    // prints a list into the line indicating the exercise names for each exercise?
     public void printAllExercises(){
         System.out.println("AssChinDip = Assisted Chin Dips");
         System.out.println("AssPullUp = Assisted Pull ups");
@@ -192,6 +166,8 @@ public class Workout {
         System.out.println("XBodyDBCurls = Cross Body Dumbbell Curls");
     }
 
+    // Uses all the features of the workout to write a txt file that can be read to rebuild the workout at a later
+    // time. while also being legible.
     public void writeWorkoutFile(){
         String fileName= "src/WorkoutLog/WorkoutLogFiles/workout" + this.date +".txt";
         File outputFile = new File(fileName);

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2060d4fd-a405-4a3e-801d-f735860d40cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/DataStructureTutorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/ExceptionHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Function1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Function2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Function3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/FunctionalProgrammingTutorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/NegativeInputException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course2/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course3/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course3/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course3/Oob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course3/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course3/TreeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/AssChinDip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/AssPullUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/CrookedBarCurls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/DBChestPress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/DBCurls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/DBLatRaise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/DBShoulderPress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/DBShoulderShrugs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/Exercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/FWRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/GenerateWorkout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/HalfDBCurls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/LatPullDownOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/OvrHeadTricDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/RearDelt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/RotatorCuffDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/SglArmBentRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/SglArmCabRaise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/TemplateExercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/Workout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/WorkoutLogFiles/workout06-05-2025.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/WorkoutLogFiles/workout1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/WristCurls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkoutLog/XBodyDBCurls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gross_calculator/GrossPayCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gross_calculator/HourlyPayCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gross_calculator/InstantCreditCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gross_calculator/SalaryCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learning_files/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learning_files/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learning_files/HomeAreaCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learning_files/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uR57TmVEh45Xor4pAdnCYXiEFA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DataStructureTutorial.executor": "Run",
+    "Application.ExceptionHandling.executor": "Run",
+    "Application.Function1.executor": "Run",
+    "Application.Function2.executor": "Run",
+    "Application.FunctionalProgrammingTutorial.executor": "Run",
+    "Application.GenerateWorkout.executor": "Run",
+    "Application.Greeting.executor": "Run",
+    "Application.GrossPayCalculator.executor": "Run",
+    "Application.HomeAreaCalculator.executor": "Run",
+    "Application.HourlyPayCalculator.executor": "Run",
+    "Application.InstantCreditCheck.executor": "Run",
+    "Application.Oob.executor": "Run",
+    "Application.SalaryCalculator.executor": "Run",
+    "Application.Sets.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kingm/OneDrive/Documents/GitHub/JAVALearning/InitialLearning",
+    "onboarding.tips.debug.path": "C:/Users/kingm/OneDrive/Documents/GitHub/JAVALearning/untitled/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="GenerateWorkout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WorkoutLog.GenerateWorkout" />
+      <module name="InitialLearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WorkoutLog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenerateWorkout" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2060d4fd-a405-4a3e-801d-f735860d40cf" name="Changes" comment="" />
+      <created>1742197432504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742197432504</updated>
+    </task>
+    <servers />
+  </component>
+</project>

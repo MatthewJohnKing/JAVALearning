@@ -25,6 +25,8 @@ public class Challenge1 {
 
         //Issue 2, how to take any punctuation?
 
+        //Correction made, if there was the correct punctuation but in the wrong place the output would have been wrong.
+
         System.out.println("Initial Phrase is:" + textToReverse);
         String Reversed = ReverseText(textToReverse);
         System.out.println(Reversed);
@@ -41,10 +43,12 @@ public class Challenge1 {
             String functions should be able to adjust punctuation.
          */
 
-        String punct = ".";
-        if(inputPhrase.contains(".") ||  inputPhrase.contains("!") || inputPhrase.contains("?")){
-            punct=inputPhrase.substring(inputPhrase.length()-1);
+        String punct=inputPhrase.substring(inputPhrase.length()-1);
+        if(punct.contains(".") ||  punct.contains("!") || punct.contains("?")){
             inputPhrase=inputPhrase.substring(0,inputPhrase.length()-1);
+        }
+        else{
+            punct=".";
         }
 
         String[] words = inputPhrase.split(" ",0 );
